@@ -1,0 +1,30 @@
+version: v1beta1
+# build:
+#   roots:
+#     - .
+# lint:
+#   use:
+#     - BASIC
+#     - FILE_LOWER_SNAKE_CASE
+#   except:
+#     - ENUM_NO_ALLOW_ALIAS
+#     - IMPORT_NO_PUBLIC
+#     - PACKAGE_AFFINITY
+#     - PACKAGE_DIRECTORY_MATCH
+#     - PACKAGE_SAME_DIRECTORY
+# breaking:
+#   use:
+#     - WIRE_JSON
+plugins:
+    # The name of the plugin.
+    # Required.
+    # By default, buf generate will look for a binary named protoc-gen-NAME on your $PATH.
+  - name: go
+    # The the relative output directory.
+    # Required.
+    out: .
+    # Any options to provide to the plugin.
+    # Optional.
+    opt: paths=source_relative,plugins=grpc
+    # The custom path to the plugin binary, if not protoc-gen-NAME on your $PATH.
+    # path: custom-gen-go  # optional
