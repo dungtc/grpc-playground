@@ -6,7 +6,7 @@ Grpc server implements the same interface, receive client call and do some logic
 
 It supports multiple languages and environments
 
-![alt text](https://github.com/dungtc/grpc-playground/concept.png)
+![alt text](concept.png)
 
 More detail at: https://grpc.io/docs/what-is-grpc/introduction/
 
@@ -16,7 +16,7 @@ Grpc uses HTTP/2 as protocol, it diff from HTTP/1.1, that make our applications 
 
 **Multiplexing** reduce the spawning TCP connections by reuse connections and send many requests with a single connection. In behind the scene, it create sub-channels that allow send and recieve many requests.
 
-![alt text](https://github.com/dungtc/grpc-playground/concept.png)
+![alt text](grpc-simple.png)
 
 
 Server run
