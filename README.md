@@ -1,5 +1,5 @@
 # 1. Simple GRPC server-client example
-Grpc uses protobuffer as Interface Definition Language(IDL) and use as message interchage format
+Grpc uses protocol buffers as Interface Definition Language(IDL) and use as message interchage format
 
 Grpc is very useful for distributed services, it easy to define a service, methods, request and response type.
 Grpc server implements the same interface, receive client call and do some logic
