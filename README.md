@@ -10,7 +10,7 @@ It supports multiple languages and environments
 
 More detail at: https://grpc.io/docs/what-is-grpc/introduction/
 
-Grpc uses HTTP/2 as protocol, it diff from HTTP/1.1, that make our applications more performance and robust. It reduce latency, make our data lightweight by binary framing.
+Grpc uses ***HTTP/2*** as protocol, it diff from HTTP/1.1, that make our applications more performance and robust. It reduce latency, make our data lightweight by binary framing.
 
 **Header Compression** allow reduce request size
 
@@ -18,6 +18,15 @@ Grpc uses HTTP/2 as protocol, it diff from HTTP/1.1, that make our applications 
 
 ![alt text](grpc-simple.png)
 
+
+**CMD**
+
+Download ***Buf*** tool to generate grpc client stubs: https://buf.build/docs/installation
+
+Choose our directory contain proto files 
+```
+buf generate ./directory
+```
 
 Server run
 ```
